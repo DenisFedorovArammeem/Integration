@@ -32,9 +32,9 @@ public class JUnitProject
 	@BeforeClass
 	public static void createSuite() throws IOException, APIException {
 		//Login to API
-		client = new APIClient("https://swtestacademy.testrail.io");
-		client.setUser("canberkakduygu@gmail.com");
-		client.setPassword("Qwerty_123");
+		client = new APIClient("https://em6yxnfsmo.testrail.io");
+		client.setUser("denis.f@qamadness.com");
+		client.setPassword("YSPbJiBPJENd3qL5XxsT");
 		//Create Test Run
 		Map data = new HashMap();
 		data.put("include_all",true);
@@ -53,6 +53,7 @@ public class JUnitProject
 			caseId = ta.id();
 		}
 	}
+
     @TestRails(id="1")
     @Test
     public void validLogin()
@@ -60,7 +61,7 @@ public class JUnitProject
 		Assert.assertTrue(true);
     }
 
-    @TestRails(id="2")
+    @TestRails(id="13")
     @Test
     public void invalidLogin()
     {
